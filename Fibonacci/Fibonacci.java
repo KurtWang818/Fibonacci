@@ -5,6 +5,7 @@ public class Fibonacci {
 	}
 
 	public void printFibonacci(int n) {
+		// If the nth number is less than 0, return this message. 
 		if (n <= 0) {
 			System.out.println("There's no Fibonacci number.");
 			return;
@@ -26,6 +27,9 @@ public class Fibonacci {
 
 		System.out.println(num1);
 		System.out.println(num2);
+		
+		// First print num1 and num2, then loop from the 3rd number. 
+		// 3rd number is equal to the sum of num1 and num2. 
 
 		for (int i = 2; i < n; i++) {
 	 		int num3 = num1 + num2;
@@ -48,6 +52,7 @@ public class Fibonacci {
 	}
 
 	public boolean isPrime(int n) {
+		// Prime number should start from 2, if n == 1, should return false. 
 		if (n == 1) {
 			return false;
 		}
@@ -56,7 +61,7 @@ public class Fibonacci {
 	            	return false;
 	        	}
 	    	}
-	    return true;
+	        return true;
 	}
 }
 
